@@ -1,0 +1,568 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+@font-face {
+    font-family: 'proximanova-bold';
+    src: url('fontes/proxima-nova-bold-webfont.woff2') format('woff2'),
+         url('fontes/proxima-nova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-light';
+    src: url('fontes/proxima-nova-light-webfont.woff2') format('woff2'),
+         url('fontes/proxima-nova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'decalotype-light';
+    src: url('fontes/decalotype-light-webfont.woff2') format('woff2'),
+         url('fontes/decalotype-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton-regular-webfont';
+    src: url('fontes/panton-regular-webfont.woff2') format('woff2'),
+         url('fontes/panton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'panton-bold-webfont';
+    src: url('fontes/panton-bold-webfont.woff2') format('woff2'),
+         url('fontes/panton-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong{
+	font-weight: 800;
+}
+
+div.interface{
+	min-width:320px;
+	max-width:1200px;
+	width:100%;
+	margin:0px auto;
+    text-align: center;
+    position: relative;
+}
+
+nav{
+	float: left;
+	width:100%;
+	position: absolute;
+	background-color: #97560c;
+	padding: 50px 0 31px;
+}
+
+header{
+	position: absolute;
+	left: 0%;
+	top:0;
+    width: 100%;
+	z-index: 1;
+	padding-bottom: 33px;
+	background-color: #1057a8;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+header div#info-topo{
+    display: inline-block;
+    width: 100%;
+    background-color: #1057a8;
+    padding: 20px 0 50px;
+    text-align: center;
+}
+
+header div#info-topo span{
+    display: inline-block;
+    width: 90%;
+	margin-top: 30px;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 14px;
+}
+
+header div#info-topo span a{
+	color: #fff;
+}
+
+header div#info-topo span a:hover{
+	text-decoration: underline;
+}
+
+header div#info-topo span img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+header div#info-topo span#redes-sociais-topo a{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-position: top right;
+	margin: 0 2px;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+header div#info-topo span#redes-sociais-topo a#facebook{
+	background-image: url(../imagens/icon-facebook.png);
+}
+
+header div#info-topo span#redes-sociais-topo a#instagram{
+	background-image: url(../imagens/icon-instagram.png);
+}
+
+header div#info-topo span#redes-sociais-topo a#whatsapp{
+	background-image: url(../imagens/icon-whatsapp.png);
+}
+
+header div#info-topo span#redes-sociais-topo a:hover{
+	background-position: top left;
+}
+
+header img#logo{
+	display: inline-block;
+	width: 90%;
+	max-width: 360px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#check{
+    display:none;
+}
+
+nav label#icone{
+	position: absolute;
+	top: -30px;
+	left: -1px;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 0 10px 10px 0;
+	background-color: #021013;
+}
+
+nav label img{
+	display: inline-block;
+}
+
+#check:checked ~ header{
+	transform: translateX(75%);
+	-webkit-transform: translateX(75%);
+	-moz-transform: translateX(75%);
+	-o-transform: translateX(75%);
+}
+
+ul.menu{
+	display: none;
+}
+
+ul.menu-mobile{
+	float: left;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	padding: 0 0 42px 0;
+}
+
+ul.menu-mobile label#icone{
+	position: absolute;
+	right: 15%;
+	top: 20px;
+	font-size: 30px;
+	font-family: 'Panton Black', sans-serif;
+	cursor: pointer;
+}
+
+ul.menu-mobile li{
+	float: left;
+	width: 75%;
+	margin-top: 30px;
+	font-family: 'Panton Bold', sans-serif;
+}
+
+ul.menu-mobile li a{
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+ul.menu-mobile li a.area-cl {
+	display: inline-block;
+	color: #0d131c;
+	background-color: eabe17;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+
+ul.menu-mobile li a.area-cl:hover {
+	display: inline-block;
+	color: #eabe17;
+	background-color: #ffffff;
+}
+
+ul.menu-mobile li a.area-cl:after {
+    content: unset;
+    display: unset;
+    margin: unset;
+    width:  unset;
+    height: unset;
+    background-color: unset;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+
+ul.menu-mobile li a:after{
+    content: "";
+    display: table;
+    margin: 5px auto 0 auto;
+    width: 0;
+    height: 2px;
+    background-color: #c5e70d;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+
+ul.menu-mobile li:hover a:after{
+    width: 80%;
+}
+
+footer{
+	float: left;
+	width: 100%;
+	background-color: #1057a8;
+	padding: 30px 0;
+	margin-top: 30px;
+}
+
+footer address{
+	display: inline-block;
+	width: 90%;
+	color: #fff;
+	margin-top: 20px;
+	line-height: normal;
+	font-size: 14px;
+}
+
+footer div#contato-footer{
+	display: inline-block;
+	width: 90%;
+	margin-top: 40px;
+}
+
+footer div#contato-footer span{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+	color: #fff;
+	font-size: 14px;
+}
+
+footer div#contato-footer span a{
+	color: #fff;
+}
+
+footer div#contato-footer span a:hover{
+	text-decoration: underline;
+}
+
+footer div#contato-footer span img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer div#contato-footer span#redes-sociais-footer a{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background-position: top left;
+	margin: 0 2px;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+footer div#contato-footer span#redes-sociais-footer a#facebook{
+	background-image: url(../imagens/902.png);
+}
+
+footer div#contato-footer span#redes-sociais-footer a#instagram{
+	background-image: url(../imagens/904.png);
+}
+
+footer div#contato-footer span#redes-sociais-footer a#whatsapp{
+	background-image: url(../imagens/905.png);
+}
+
+footer div#contato-footer span#redes-sociais-footer a:hover{
+	background-position: top right;
+}
+
+footer img#clickslim{
+	display: block;
+	margin: 40px auto 0 auto;
+}
+
+@media screen and (min-width: 768px){
+	header{
+		padding-bottom: 30px;
+	}
+
+	header div#info-topo span{
+		width: auto;
+		margin-right: 15px;
+	}
+
+	nav{
+		position: relative;
+		background-color: transparent;
+		padding: 0;
+	}
+
+	header{
+		float: left;
+		position: relative;
+		z-index: 99;
+	}
+
+	ul.menu-mobile{
+		display: none;
+	}
+
+	nav label#icone{
+		display: none;
+	}
+
+	ul.menu{
+		display: inline-block;
+		margin-top: 30px;
+		margin-right: 5px;
+	}
+
+	ul.menu li{
+		display: inline-block;
+		padding: 5px;
+		position: relative;
+	}
+
+	ul.menu li a{
+		display: inline-block;
+		color: #ffffff;
+		padding: 5px;
+		font-size: 15px;
+		font-weight: 700;
+		border-radius: 5px;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-o-transition: .5s;
+		transition: .5s;
+		position: relative;
+	}
+
+	ul.menu li a.area-cl {
+		color: white;
+		background-color: #FF5400;
+		padding: 8px 15px;
+		border-radius: 10px;
+		font-size: 16px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	ul.menu li a.area-cl:hover {
+		color: #eabe17;
+		background-color: #ffffff;
+	}
+	ul.menu li a.area-cl:after {
+		content: unset;
+		display: unset;
+		margin: unset;
+		width:  unset;
+		height: unset;
+		background-color: unset;
+		transition: .3s;
+		-webkit-transition: .3s;
+		-moz-transition: .3s;
+		-o-transition: .3s;
+	}
+
+	ul.menu li a:after{
+		content: "";
+		display: table;
+		margin: 5px auto 0 auto;
+		width: 0;
+		height: 2px;
+		background-color: #ffffff;
+		transition: .3s;
+		-webkit-transition: .3s;
+		-moz-transition: .3s;
+		-o-transition: .3s;
+	}
+
+	ul.menu li a:hover:after{
+		width: 80%;
+	}
+}
+
+@media screen and (min-width:1024px){
+	header div#info-topo span{
+		margin-top: 0;
+		margin-right: 30px;
+	}
+
+	ul.menu li a{
+		font-size: 16px;
+	}
+
+	footer div#info-footer{
+		float: left;
+		width: 500px;
+		text-align: left;
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	footer div#contato-footer{
+		width: 300px;
+		margin-top: 0;
+		margin-left: 50px;
+		float: left;
+		text-align: left;
+	}
+
+	footer div#contato-footer span{
+		margin-top: 25px;
+	}
+
+	footer img#clickslim{
+		float: right;
+		margin-right: 20px;
+		margin-top: 125px;
+	}
+}
+
+@media screen and (min-width:1200px){
+	header {
+		padding-bottom: 0;
+	}
+
+	header div#info-topo {
+		float: right;
+		width: auto;
+		margin-right: 30px;
+		font-size: 16px;
+		padding-bottom: 0;
+	}
+
+	header div#info-topo span{
+		margin: 0 15px 0 0;
+		font-size: 14px;
+	}
+
+	header div#info-topo span:last-of-type {
+		margin-right: 0;
+	}
+
+	header img#logo{
+		float: left;
+		margin-left: 20px;
+		margin-top: 50px;
+	}
+
+	ul.menu{
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+
+	ul.menu li {
+		padding: 0;
+	}
+
+	ul.menu li a{
+		font-size: 16px;
+	}
+
+	ul.menu li a.area-cl {
+		font-size: 18px;
+		margin-left: 10px;
+	}
+}

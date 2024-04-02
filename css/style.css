@@ -1,0 +1,570 @@
+@charset "utf-8";
+
+div#slide{
+    float: left;
+    width: 100%;
+    margin-top: 390px;
+}
+
+section#acesso-rapido{
+    display: inline-block;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+section#acesso-rapido div.interface a {
+    display: inline-block;
+    height: 203px;
+    width: 203px;
+    margin: 15px;
+    background-position: top left;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+section#acesso-rapido div.interface a.chamar-whats {
+    background-image: url(../imagens/802.png);
+}
+
+section#acesso-rapido div.interface a.via-boleto {
+    background-image: url(../imagens/800.png);
+}
+
+section#acesso-rapido div.interface a.baixar-app {
+    background-image: url(../imagens/803.png);
+}
+
+section#acesso-rapido div.interface a.teste-velocidade {
+    background-image: url(../imagens/804.png);
+}
+
+section#acesso-rapido div.interface a.duvidas-frequentes {
+    background-image: url(../imagens/805.png);
+}
+
+section#acesso-rapido div.interface a:hover {
+    background-position: top right;
+}
+
+section#internet-residencial {
+    float: left;
+    width: 100%;
+    background-color: #01edfe;
+}
+
+section#internet-residencial div.text {
+    display: inline-block;
+    width: 90%;
+}
+
+section#internet-residencial div.text br {
+    display: none;
+}
+
+section#internet-residencial div.text h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 40px;
+    color: white;
+}
+
+section#internet-residencial div.text p {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    color: white;
+}
+
+section#internet-residencial div.text a {
+    display: inline-block;
+    color: #ffffff;
+    background-color:  ;
+    padding: 15px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 20px 0 50px;
+    transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+section#internet-residencial div.text a:hover {
+    color: white;
+    background-color: #ff5400;
+}
+
+section#internet-residencial img {
+    display: inline-block;
+    width: 100%;
+    max-width: 970px;
+}
+
+
+
+/* 
+section#acesso-rapido{
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+}
+
+section#acesso-rapido span#info-acesso{
+    display: inline-block;
+    width: 90%;
+    font-weight: 700;
+    font-size: 20px;
+    color:#333;
+    line-height: normal;
+}
+
+section#acesso-rapido h1{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+section#acesso-rapido p{
+    display: inline-block;
+    background-color: #fff;
+    padding: 2px 10px;
+    position: relative;
+    top: -10px;
+    color:#666;
+}
+
+section#acesso-rapido a{
+    display: inline-block;
+    width: 90%;
+    margin-top: 30px;
+    color: #222;
+    line-height: normal;
+    font-size: 25px;
+}
+
+section#acesso-rapido a div.img-link{
+    display: block;
+    height: 93px;
+    margin: 0 auto 15px auto;
+    background-position: top right;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+section#acesso-rapido a#app div.img-link{
+    width: 53px;
+    background-image: url(../imagens/icon-smartphone.png);
+}
+
+section#acesso-rapido a#velocidade div.img-link{
+    width: 93px;
+    background-image: url(../imagens/icon-startup.png);
+}
+
+section#acesso-rapido a#central-cliente div.img-link{
+    width: 99px;
+    background-image: url(../imagens/icon-central-cliente.png);
+}
+
+section#acesso-rapido a#velocidade{
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+section#acesso-rapido a:hover div.img-link{
+    background-position: top left;
+}
+
+section#acesso-rapido a:hover{
+    color: #ffa200;
+} */
+
+
+/* 
+section#internet-residencial{
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 40px;
+    background-image: url("../imagens/bg-internet.jpg");
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#internet-residencial h1{
+    display: inline-block;
+    text-shadow: 0 0 10px #333;
+    width: 90%;
+    color: #fff;
+    font-size: 35px;
+    line-height: normal;
+    font-weight: bold;
+}
+
+section#internet-residencial h2{
+    display: inline-block;
+    width: 90%;
+    font-size: 18px;
+    text-shadow: 0 0 10px #333;
+    color: #fff;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+section#internet-residencial img{
+    display: inline-block;
+    width: 90%;
+    max-width: 764px;
+    margin-top: 60px;
+}
+
+section#internet-residencial div.plano{
+    display: inline-block;
+    width: 250px;
+    margin-top: 50px;
+    background-color: #ffa200;
+    border-radius: 20px;
+    padding: 20px 10px;
+    color: #fff;
+}
+
+section#internet-residencial div.plano span.titulo{
+    display: inline-block;
+    width: 90%;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+}
+
+section#internet-residencial div.plano span.valor{
+    display: inline-block;
+    width: 90%;
+    margin-top: 20px;
+}
+
+section#internet-residencial div.plano span.valor p.msg{
+    text-align: left;
+}
+
+section#internet-residencial div.plano span.valor strong{
+    display: inline-block;
+    font-size: 90px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+section#internet-residencial div.plano span.valor p.cents{
+    display: inline-block;
+    font-size: 30px;
+    line-height: normal;
+    text-align: left;
+    margin-left: 5px;
+}
+
+section#internet-residencial div.plano a{
+    display: inline-block;
+    padding: 15px;
+    background-color: #ff5102;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+section#internet-residencial div.plano a:hover{
+    background-color: #d34300;
+} */
+
+section#vantagens{
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+}
+
+section#vantagens h1{
+    display: inline-block;
+    width: 90%;
+    font-size: 30px;
+    color: #002128;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+section#vantagens h1 br{
+    display: none;
+}
+
+section#vantagens h2{
+    display: inline-block;
+    width: 90%;
+    color: #002128;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+section#vantagens figure{
+    display: inline-block;
+    width: 120px;
+    margin: 20px 10px 0 10px;
+    vertical-align: top;
+}
+
+section#vantagens figure figcaption{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #222;
+    font-weight: 700;
+    line-height: normal;
+}
+
+section#vantagens a{
+    display: block;
+    width: 150px;
+    background-color: #ff5400;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: #fff;
+    margin: 30px auto 0 auto;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+section#vantagens a:hover{
+    width:170px;
+}
+
+@media screen and (min-width:768px){
+    div#slide{
+        margin-top: 0px;
+    }
+
+    /* section#acesso-rapido span#info-acesso{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    section#acesso-rapido h1{
+        margin-top: 70px;
+    }
+
+    section#acesso-rapido h1 p{
+        font-size: 17px;
+    }
+
+    section#acesso-rapido a{
+        width: 30%;
+    }
+
+    section#acesso-rapido a#velocidade{
+        padding: 20px 0;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-top: none;
+        border-bottom: none;
+    } */
+/* 
+    section#internet-residencial{
+        min-height: 700px;
+    }
+
+    section#internet-residencial h1{
+        font-size: 45px;
+        margin-top: 40px;
+    }
+
+    section#internet-residencial img{
+        float: left;
+        margin-left: 20px;
+        max-width: 400px;
+        margin-top: 100px;
+    }
+
+    section#internet-residencial div.plano{
+        margin-top: 130px;
+    } */
+
+    
+
+    section#internet-residencial div.text br {
+        display: inline;
+    }
+
+    section#internet-residencial div.text h1 {
+        font-size: 42px;
+    }
+
+    section#internet-residencial div.text p {
+        font-size: 20px;
+    }
+
+    section#internet-residencial div.text a {
+        margin-top: 30px;
+    }
+
+    section#vantagens{
+        padding: 70px 0 40px 0;
+    }
+
+    section#vantagens h1{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    section#vantagens h1 br{
+        display: block;
+    }
+
+    section#vantagens h2{
+        font-size: 22px;
+        font-weight: 900;
+    }
+}
+
+@media screen and (min-width:968px){
+    section#internet-residencial {
+        background: url(../imagens/774.jpg) center top no-repeat;
+        background-color: unset;
+        height: 642px;
+    }
+
+    section#internet-residencial div.text {
+        display: inline-block;
+        width: 90%;
+        margin-top: 150px;
+    }
+
+    section#internet-residencial div.text h1 {
+        text-align: left;
+        font-size: 44px;
+    }
+
+    section#internet-residencial div.text p {
+        text-align: left;
+        line-height: normal;
+    }
+
+    section#internet-residencial div.text a {
+        float: left;
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    section#internet-residencial img {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px){
+    /* section#acesso-rapido a{
+        width: 32%;
+    }
+
+	section#acesso-rapido a div.img-link{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    section#acesso-rapido a b{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        margin-left: 5px;
+    } */
+
+    /* section#internet-residencial img{
+        max-width: 600px;
+    }
+
+    section#internet-residencial div.plano{
+        margin-top: 250px;
+    } */
+
+    
+
+    section#acesso-rapido{
+        padding: 80px 0; 
+    }
+
+    section#vantagens{
+        background-image: url(../imagens/773.jpg);
+        background-position: -170% 100%;
+        background-repeat: no-repeat;
+    }
+
+    section#vantagens div#conteudo-vtg{
+        float: right;
+        width: 65%;
+        margin-top: 150px;
+    }
+
+    section#vantagens h2{
+        text-align: left;
+        width: 95%;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    /* section#internet-residencial{
+        padding-bottom: 50px;
+    }
+
+    section#internet-residencial h1{
+        font-size: 65px;
+        margin-top: 50px;
+    }
+
+    section#internet-residencial div.plano{
+        margin-top: 250px;
+        padding: 40px 20px;
+    }
+
+    section#internet-residencial img{
+        max-width: 700px;
+    } */
+    section#internet-residencial div.text {
+        display: inline-block;
+        width: 90%;
+        margin-top: 150px;
+    }
+    
+    section#internet-residencial div.text h1 {
+        font-size: 50px;
+    }
+    
+    section#internet-residencial div.text p {
+        font-size: 22px;
+    }
+
+    section#vantagens{
+        background-position: -35% 80%;
+        padding-bottom: 70px;
+    }
+
+    section#vantagens div#conteudo-vtg{
+        width: 55%;
+    }
+}

@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+section#internet{
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+}
+
+section#internet div#titulo{
+    display: inline-block;
+    width: 100%;
+    background-color: #00446b;
+    padding: 30px 0;
+}
+
+section#internet div#titulo h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+section#internet h2{
+    display: inline-block;
+    width: 90%;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00446b;
+    line-height: normal;
+}
+
+section#internet h2 br{
+    display: none;
+}
+
+section#internet div.plano{
+    display: inline-block;
+    width: 280px;
+    background-color: #fff;
+    padding: 40px 0;
+    border-radius: 20px;
+    margin: 30px 5px 0 5px;
+}
+
+section#internet div.plano span.nome-combo{
+    display: inline-block;
+    width: 80%;
+    font-size: 18px;
+    color: #222;
+    text-align: left;
+    font-weight: 700;
+}
+
+section#internet div.plano span.velocidade{
+    display: inline-block;
+    width: 80%;
+    font-size: 40px;
+    color: #00446b;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: left;
+}
+
+section#internet div.plano span.bonus{
+    display: inline-block;
+    width: 80%;
+    margin-top: 10px;
+    text-align: left;
+    line-height: normal;
+    color: #00446b;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section#internet div.plano span.bonus b{
+    color: #ff7700;
+}
+
+section#internet div.plano span.valor{
+    display: inline-block;
+    width: 80%;
+    font-size: 35px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+section#internet div.plano span.valor p{
+    font-size: 14px;
+    color: #666;
+}
+
+section#internet div.plano a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ff7700;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 20px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+section#internet div.plano a:hover{
+    background-color: #00446b;
+}
+
+section#internet div.plano span.beneficios{
+    display: inline-block;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-top: 20px;
+}
+
+section#internet div.plano span.beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section#internet div.plano span.beneficios p{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+div#combo{
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #790ba5;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+
+div#combo span{
+    display: inline-block;
+    width: 90%;
+    color: #fff;
+    font-size: 25px;
+    line-height: normal;
+}
+
+div#combo a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff7700;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+div#combo a:hover{
+    background-color: #fff;
+    color: #790ba5;
+}
+
+section#perguntas {
+    float: left;
+    width: 100%;
+    background-color: #e7e7e7;
+    padding: 10px 0 50px;
+    margin-top: 30px;
+}
+
+section#perguntas h1 {
+    display: inline-block;
+    width: 90%;
+    font-family: 'poppins-semiBold', sans-serif;
+    color: #003ea3;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+section#perguntas .acc {
+    display: inline-block;
+    width: 90%;
+    /* margin: 90px 0; */
+    overflow: hidden;
+    padding: 0;
+}
+
+section#perguntas .acc h2 {
+    color: #1f1f1f;
+    font-family: 'poppins-regular', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+section#perguntas .acc p {
+    color: #000e28;
+    font-family: 'proximanova-light', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 20px 10px;
+    width: 90%;
+}
+
+section#perguntas .acc li {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#perguntas .acc_ctrl {
+    background: transparent;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 1em 2em 1em 0.5em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+section#perguntas .acc_ctrl:before {
+    background: #ff8317;
+    content: '';
+    height: 2px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+}
+
+section#perguntas .acc_ctrl:after {
+    background: #ff8317;
+    content: '';
+    height: 2px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 14px;
+}
+
+section#perguntas .acc_ctrl.active:before {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+section#perguntas .acc_ctrl.active h2, .acc_ctrl:focus h2 {
+    position: relative;
+}
+
+section#perguntas .acc_panel {
+    background: #f6f4f4;
+    display: none;
+    overflow: hidden;
+    border-left: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+section#perguntas .acc_panel a {
+    color: #0062ff;
+}
+section#perguntas .acc_panel a:hover {
+    color: #0042ac;
+}
+
+@media screen and (min-width: 768px){
+    section#internet h2{
+        font-size: 35px;
+        text-align: left;
+    }
+
+    section#internet h2 br{
+        display: inline-block;
+    }
+
+    div#combo{
+        background: url(../imagens/bg-tv-novo.png) left top no-repeat;
+        text-align: left;
+        padding: 110px 0;
+    }
+
+    div#combo span{
+        margin-left: 30px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    div#combo a{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    section#internet div#titulo{
+        background: url(../imagens/topo-internet-novo.png) center top no-repeat;
+        height: 361px;
+        padding: 0;
+        text-align: left;
+    }
+
+    section#internet div#titulo h1{
+        float: left;
+        font-size: 65px;
+        margin-left: 5%;
+        margin-top: 120px;
+        text-align: left;
+    }
+
+    section#perguntas h1 {
+        width: 95%;
+        font-size: 34px;
+    }
+
+    section#perguntas .acc {
+        width: 95%;
+    }
+
+    section#perguntas .acc h2 {
+        font-size: 22px;
+    }
+    
+    section#perguntas .acc p {
+        font-size: 20px;
+    }
+    
+    section#perguntas .acc_ctrl {
+        padding: 2em 2em 2em 0.5em;
+    }
+}
+
+@media screen and (min-width:1200px){
+    div#combo{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    section#perguntas h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    section#perguntas .acc {
+        width: 100%;
+    }
+
+    section#perguntas .acc h2 {
+        font-size: 25px;
+    }
+    
+    section#perguntas .acc p {
+        font-size: 22px;
+    }
+    
+    section#perguntas .acc_ctrl {
+        padding: 2.5em 2em 2.5em 1em;
+    }
+}

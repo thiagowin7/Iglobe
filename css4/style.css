@@ -1,0 +1,11 @@
+.card video{
+    width: 1000px;
+    text-align: center;
+}
+body{
+    background-color: #1057a8;
+    color: white;
+}
+nav{
+    background-color: #1057a8;
+}
