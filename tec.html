@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglobetech</title>
     <link rel="icon" href="imagens/log.png"/>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/my-slider.css" />
@@ -16,9 +18,8 @@
     <script src="js/default-modal.js"></script>
     <script src="js/default.js"></script>
     <script src="js/MascaraValidacao.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iglobetech</title>
 </head>
+
 <body>
     <nav class="wow fadeIn" data-wow-delay=".5s" data-wow-duration=".5s">
         <input type="checkbox" id="check" />
@@ -64,44 +65,41 @@
     </nav>
     &nbsp;
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card">
-                <img src="imagens/camera2.jpg" class="card-img-top" alt="Sistema de Câmeras">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Câmeras</h5>
-                    <p class="card-text">Sistema de monitoramento 24h</p>&nbsp;
-                    <a href="https://wa.me/5571996220351" class="btn btn-primary d-block mx-auto">Contratar</a>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="imagens/camera2.jpg" class="card-img-top" alt="Sistema de Câmeras">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Câmeras</h5>
+                        <p class="card-text">Sistema de monitoramento 24h</p>&nbsp;
+                        <a href="https://wa.me/5571996220351" class="btn btn-primary d-block mx-auto">Contratar</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="imagens/alarme.jpg" class="card-img-top" alt="Alarmes de Segurança">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Alarmes</h5>
+                        <p class="card-text">Alarmes de segurança, para manter sua residência/estabelecimento seguro</p>&nbsp;
+                        <a href="https://wa.me/5571996220351" class="btn btn-primary d-block mx-auto">Contratar</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <div class="card wow fadeInUp" data-wow-delay="0.9s">
+                    <img src="imagens/cerca.jpg" class="card-img-top" alt="Cerca Elétrica">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cerca elétrica</h5>
+                        <p class="card-text">Cerca elétrica, para manter sua residência/estabelecimento seguro</p>&nbsp;
+                        <a href="https://wa.me/5571996220351" class="btn btn-primary d-block mx-auto">Contratar</a>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <div class="col">
-            <div class="card">
-                <img src="imagens/alarme.jpg" class="card-img-top" alt="Alarmes de Segurança">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Alarmes</h5>
-                    <p class="card-text">Alarmes de segurança, para manter sua residência/estabelecimento seguro</p> &nbsp;
-                    <a href="https://wa.me/5571996220351" class="btn btn-primary d-block mx-auto">Contratar</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="card">
-                <img src="imagens/cerca.jpg" class="card-img-top" alt="Cerca Elétrica">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Cerca elétrica</h5>
-                    <p class="card-text">Cerca elétrica, para manter sua residência/estabelecimento seguro</p>&nbsp;
-                    <a href="https://wa.me/5571996220351" class="btn btn-primary d-block mx-auto">Contratar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
- 
-
     </div>
 
     <footer class="wow fadeIn" data-wow-delay=".5s" data-wow-duration=".5s">
@@ -128,5 +126,10 @@
             </div>
         </div>
     </footer> 
+    <script src="dist/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
+
 </html>
