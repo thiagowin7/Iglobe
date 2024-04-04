@@ -56,73 +56,69 @@
         </header>
     </nav>
     
-   <div class="container">
-        <h1 class="text-center">Planos de internet em Fibra óptica</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="planos/30megas.jpeg" class="card-img-top" alt="30 megas em fibra óptica">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Fibra óptica</h5>
-                        <p class="card-text">30 megas em fibra óptica por apenas</p>
-                        <strong>R$ 59,90</strong>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 30 megas." class="btn btn-primary d-block mx-auto">Contratar</a>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="planos/60megas.jpeg" class="card-img-top" alt="60 megas em fibra óptica">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Fibra óptica</h5>
-                        <p class="card-text">60 megas em fibra óptica por apenas</p>
-                        <strong>R$ 69,90</strong>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 60 megas." class="btn btn-primary d-block mx-auto">Contratar</a>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="planos/80megas.jpeg" class="card-img-top" alt="80 megas em fibra óptica">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Fibra óptica</h5>
-                        <p class="card-text">80 megas em fibra óptica por apenas</p>
-                        <strong>R$ 79,90</strong>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 80 megas." class="btn btn-primary d-block mx-auto">Contratar</a>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card">
-                    <img src="planos/100megas.jpeg" class="card-img-top" alt="100 megas em fibra óptica">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Fibra óptica</h5>
-                        <p class="card-text">100 megas em fibra óptica por apenas</p>
-                        <strong>R$ 89,90</strong>
-                    </div>
-                    <a href="https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 100 megas." class="btn btn-primary d-block mx-auto">Contratar</a>
-                </div>
-            </div>
-        </div>
+    <style>
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    
+        .card-img-top {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .card-img-top:hover {
+            transform: scale(1.1);
+        }
+    
+        .btn-primary {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .btn-primary:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+    
+    <div class="container animate__animated animate__fadeIn">
+        <div id="fibraPlanos" class="row row-cols-1 row-cols-md-3 g-4"></div>
     </div>
-
-    <div class="container">
-        <h1 class="text-center">Planos empresariais</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+    
+    <script>
+        const fibraPlanos = [
+            { velocidade: "30 megas", preco: "R$ 59,90", imagem: "planos/30megas.jpeg", link: "https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 30 megas." },
+            { velocidade: "60 megas", preco: "R$ 69,90", imagem: "planos/60megas.jpeg", link: "https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 60 megas." },
+            { velocidade: "80 megas", preco: "R$ 79,90", imagem: "planos/80megas.jpeg", link: "https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 80 megas." },
+            { velocidade: "100 megas", preco: "R$ 89,90", imagem: "planos/100megas.jpeg", link: "https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de assinar o plano residencial de 100 megas." }
+        ];
+    
+        const fibraContainer = document.getElementById('fibraPlanos');
+    
+        fibraPlanos.forEach(plano => {
+            const card = document.createElement('div');
+            card.classList.add('col', 'animate__animated', 'animate__fadeInUp');
+            card.innerHTML = `
                 <div class="card">
-                    <img src="planos/empresarialp.jpeg" class="card-img-top" alt="Planos empresariais">
+                    <img src="${plano.imagem}" class="card-img-top" alt="${plano.velocidade} em fibra óptica">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Venha conhecer nossos planos empresariais!</h5>
+                        <h5 class="card-title">Fibra óptica</h5>
+                        <p class="card-text">${plano.velocidade} em fibra óptica por apenas</p>
+                        <strong>${plano.preco}</strong>
                     </div>
-                    <a href="https://api.whatsapp.com/send?phone=5571987955190&text=Olá Gostaria de conhecer os planos empresariais." class="btn btn-primary d-block mx-auto">Contratar</a>
+                    <a href="${plano.link}" class="btn btn-primary d-block mx-auto animate__animated animate__fadeIn">Contratar</a>
                 </div>
-            </div>
-        </div>
-    </div>
+            `;
+            fibraContainer.appendChild(card);
+        });
+    </script>
+    
+    <!-- Adicione as seguintes linhas ao seu arquivo HTML para incluir a biblioteca de animações animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    
+    
 
     <footer class="wow fadeIn" data-wow-delay=".5s" data-wow-duration=".5s">
         <div class="interface">
